@@ -139,6 +139,7 @@ func settingsFlags(settings *plugin.Settings, category string) []cli.Flag {
 			Usage:       "source directory for pages sync",
 			EnvVars:     []string{"PLUGIN_PAGES_DIRECTORY"},
 			Destination: &settings.Pages.Directory,
+			Value:       "docs/",
 			Category:    category,
 		},
 		&cli.StringSliceFlag{

@@ -76,6 +76,10 @@ func (p *Plugin) Validate() error {
 			if p.settings.Pages.Directory == "" {
 				return fmt.Errorf("pages source directory needs to be set")
 			}
+
+			if len(p.settings.Action.Value()) > 1 {
+				return fmt.Errorf("pages action can not be combined with other actions")
+			}
 		default:
 			return fmt.Errorf("unknown action %s", action)
 		}
