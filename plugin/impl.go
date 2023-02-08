@@ -33,13 +33,12 @@ type Settings struct {
 }
 
 var (
-	ErrAuthSourceNotSet        = errors.New("either SSH key or netrc password is required")
-	ErrPagesDirectoryNotExist  = errors.New("pages directory must exist")
-	ErrPagesDirectoryNotValid  = errors.New("pages directory not valid")
-	ErrPagesSourceNotSet       = errors.New("pages source directory must be set")
-	ErrPagesActionNotExclusive = errors.New("pages action is mutual exclusive")
-	ErrActionUnknown           = errors.New("action not found")
-
+	ErrAuthSourceNotSet           = errors.New("either SSH key or netrc password is required")
+	ErrPagesDirectoryNotExist     = errors.New("pages directory must exist")
+	ErrPagesDirectoryNotValid     = errors.New("pages directory not valid")
+	ErrPagesSourceNotSet          = errors.New("pages source directory must be set")
+	ErrPagesActionNotExclusive    = errors.New("pages action is mutual exclusive")
+	ErrActionUnknown              = errors.New("action not found")
 	ErrGitCloneDestintionNotValid = errors.New("destination not valid")
 )
 
